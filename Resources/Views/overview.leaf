@@ -6,9 +6,9 @@
 #export("content") {
 	<div class="container-fluid jumbotron">
 		<div class="row justify-content-center align-items-center">
-			  <div class="col-sm-4">
+			  <div class="col-sm-4" style="padding: 50px">
 				    <div class="ih-item circle colored effect10 top_to_bottom">
-				    	<a href="#">
+				    	<a href="/survey">
 					        <div class="img">
 					        	<img src="images/survey.png" alt="survey">
 					        </div>
@@ -19,7 +19,7 @@
 					    </a>
 				    </div>
 			  </div>
-			  <div class="col-sm-4">
+			  <div class="col-sm-4" style="padding: 50px">
 				    <div class="ih-item circle colored effect10 top_to_bottom">
 				    	<a href="#">
 				        	<div class="img">

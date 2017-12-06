@@ -15,6 +15,7 @@
         <!-- By SH  -->
         <link rel="stylesheet" href="/styles/style.css">
         <link rel="stylesheet" type="text/css" href="/styles/ihover/ihover.css">
+        <link rel="stylesheet" type="text/css" href="/styles/surveyTable.css">
 
         <!-- Font Awesome -->
         <script src="https://use.fontawesome.com/cd64de3d20.js"></script>
@@ -23,7 +24,7 @@
     <body>
         <nav class="navbar navbar-dark bg-dark">
             <ul class="nav navbar-nav">
-                <li><a href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i>Home</a></li>
+                <li><a href="/overview"><i class="fa fa-home fa-lg" aria-hidden="true"></i>Home</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i>Log Out</a></li>
@@ -43,6 +44,7 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/js/surveyTable.js"></script>
     </body>
 
 </html>

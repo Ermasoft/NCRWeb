@@ -111,13 +111,29 @@ body {
 /*  background: #76b852; /* fallback for old browsers */
 background: #ffffff;
 /*  background: -webkit-linear-gradient(right, #76b852, #8DC26F);*/
-  background: -webkit-linear-gradient(right, #ffffff, #eaeaea);
+  background: -webkit-linear-gradient(right, #93a9cf, #f6caca);
 /*  background: -moz-linear-gradient(right, #76b852, #8DC26F);*/
-  background: -moz-linear-gradient(right, #ffffff, #eaeaea);
+  background: -moz-linear-gradient(right, #93a9cf, #f6caca);
 /*  background: -o-linear-gradient(right, #76b852, #8DC26F);*/
-  background: -o-linear-gradient(right, #ffffff, #eaeaea);
+  background: -o-linear-gradient(right, #93a9cf, #f6caca);
 /*  background: linear-gradient(to left, #76b852, #8DC26F);*/
-  background: linear-gradient(to left, #ffffff, #eaeaea)
+  background: linear-gradient(to left, #93a9cf, #f6caca)
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+.jumbotron {
+  /*  background: #76b852; /* fallback for old browsers */
+background: #ffffff;
+/*  background: -webkit-linear-gradient(right, #76b852, #8DC26F);*/
+  background: -webkit-linear-gradient(right, #93a9cf, #f6caca);
+/*  background: -moz-linear-gradient(right, #76b852, #8DC26F);*/
+  background: -moz-linear-gradient(right, #93a9cf, #f6caca);
+/*  background: -o-linear-gradient(right, #76b852, #8DC26F);*/
+  background: -o-linear-gradient(right, #93a9cf, #f6caca);
+/*  background: linear-gradient(to left, #76b852, #8DC26F);*/
+  background: linear-gradient(to left, #93a9cf, #f6caca)
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;      
