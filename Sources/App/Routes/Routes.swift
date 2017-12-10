@@ -4,6 +4,7 @@ import Sessions
 import HTTP
 
 final class Routes: RouteCollection {
+    
     let view: ViewRenderer
     let authRoutes: RouteBuilder
     let loginRouteBuilder: RouteBuilder
@@ -39,6 +40,7 @@ final class Routes: RouteCollection {
         //1. Modify this controller to be built by "authRoutes" to protect all it's routes
         /// GET /hello/...
         authRoutes.resource("hello", HelloController(view))
+        builder.resource("clients", ClientController(view))
         
         //2. create the login route
 //        builder.get("login") { req in
@@ -52,6 +54,11 @@ final class Routes: RouteCollection {
         // GET /overview
         builder.get("overview") { req in
             return try self.view.make("overview")
+        }
+        
+        // GET /survey
+        builder.get("survey") { req in
+            return try self.view.make("survey")
         }
         
         //3. implement the login logic, built by the "loginRouteBuilder" so our session is persisted
