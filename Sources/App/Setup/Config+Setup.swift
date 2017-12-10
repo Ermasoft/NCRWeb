@@ -26,5 +26,7 @@ extension Config {
         preparations.append(Client.self)
         preparations.append(Baby.self)
         preparations.append(Product.self)
+        preparations.append(Question.self)
+        preparations.append(Answer.self)
     }
 }

@@ -8,12 +8,12 @@
 		<div class="row justify-content-center align-items-center">
 			  <div class="col-sm-4" style="padding: 50px">
 				    <div class="ih-item circle colored effect10 top_to_bottom">
-				    	<a href="/survey">
+				    	<a href="/clients">
 					        <div class="img">
 					        	<img src="images/survey.png" alt="survey">
 					        </div>
 					        <div class="info">
-					          <h3>Survey</h3>
+					          <h3>Clients</h3>
 					          <!-- <p>Description goes here</p> -->
 					        </div>
 					    </a>
@@ -26,7 +26,7 @@
 				        		<img src="images/report.png" alt="report">
 				        	</div>
 				        	<div class="info">
-				         		 <h3>Report</h3>
+				         		 <h3>Survey</h3>
 				         		 <!-- <p>Description goes here</p> -->
 				        	</div>
 				        </a>
