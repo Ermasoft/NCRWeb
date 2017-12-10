@@ -10,20 +10,22 @@ import HTTP
 import Fluent
 import AuthProvider
 
+// MARK: - Class: User -
 final class User: Model, PasswordAuthenticatable, SessionPersistable {
-    let storage = Storage()
     
+    let storage = Storage()
     var name: String = ""
     var email: String = ""
     var password: String = ""
     
-    
+    // MARK: - Initializer -
     init(name: String, email: String, password: String) {
         self.name = name
         self.email = email
         self.password = password
     }
     
+    // MARK: - DB: Parse & Serialize -
     func makeRow() throws -> Row {
         var row = Row()
         try row.set("name",name)
@@ -39,6 +41,7 @@ final class User: Model, PasswordAuthenticatable, SessionPersistable {
     }
 }
 
+// MARK: - Database Preparation -
 extension User: Preparation {
     /// Prepares a table/collection in the database
     /// for storing User
@@ -56,7 +59,7 @@ extension User: Preparation {
     }
 }
 
-// MARK: JSON
+// MARK: - JSONConvertible -
 // How the model converts from / to JSON.
 // For example when:
 //     - Creating a new User
@@ -81,7 +84,10 @@ extension User: JSONConvertible {
     }
 }
 
-// MARK: HTTP
+// MARK: - Timestampable -
+extension User: Timestampable { }
+
+// MARK: - ResponseRepresentable -
 // This allows User models to be returned
 // directly in route closures
 extension User: ResponseRepresentable { }

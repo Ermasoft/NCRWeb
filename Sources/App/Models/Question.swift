@@ -11,7 +11,6 @@ import FluentProvider
 final class Question: Model, NodeConvertible {
     
     let storage = Storage()
-    
     var Q1: String
     var Q2: String
     var Q3: String
