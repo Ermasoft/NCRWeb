@@ -95,6 +95,7 @@ extension Baby: Preparation {
     static func prepare(_ database: Database) throws {
         try database.create(self, closure: { babies in
             babies.id()
+            babies.foreignId(for: Client.self)
             babies.string("name")
             babies.string("gender")
             babies.int("age")

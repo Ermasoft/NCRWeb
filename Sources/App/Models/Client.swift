@@ -103,6 +103,13 @@ extension Client: JSONConvertible {
     }
 }
 
+// MARK: - Database Relations -
+extension Client {
+    var babies: Children<Client, Baby> {
+        return children()
+    }    
+}
+
 // MARK: - Database Preparation -
 extension Client: Preparation {
     static func prepare(_ database: Database) throws {

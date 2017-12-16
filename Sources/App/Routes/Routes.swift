@@ -47,8 +47,12 @@ final class Routes: RouteCollection {
 //            return try self.view.make("login")
 //        }
         
+//        builder.get { req in
+//            return try self.view.make("login")
+//        }
+        
         builder.get { req in
-            return try self.view.make("login")
+            return try self.view.make("overview")
         }
         
         // GET /overview
@@ -59,6 +63,10 @@ final class Routes: RouteCollection {
         // GET /survey
         builder.get("survey") { req in
             return try self.view.make("survey")
+        }
+        
+        builder.get("baby") { req in
+            return try self.view.make("baby.html")
         }
         
         //3. implement the login logic, built by the "loginRouteBuilder" so our session is persisted
