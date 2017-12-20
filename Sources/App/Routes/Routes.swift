@@ -6,12 +6,15 @@ import HTTP
 final class Routes: RouteCollection {
     
     let view: ViewRenderer
+    let drop: Droplet
+    
     let authRoutes: RouteBuilder
     let loginRouteBuilder: RouteBuilder
     
     
     init(_ view: ViewRenderer, _ drop: Droplet) {
         self.view = view
+        self.drop = drop
         
         //create a password middleware with our user
         let passwordMiddleware = PasswordAuthenticationMiddleware(User.self)
@@ -41,6 +44,10 @@ final class Routes: RouteCollection {
         /// GET /hello/...
         authRoutes.resource("hello", HelloController(view))
         builder.resource("clients", ClientController(view))
+        builder.resource("report", ReportsController(view))
+        
+        let rAPI = ReportsAPI()
+        rAPI.addRoutes(drop)
         
         //2. create the login route
 //        builder.get("login") { req in

@@ -2,14 +2,16 @@
 #extend("master")
 
 
-#export("title") { NCR - Clients}
+#export("title") { NCR - Client Report }
 
 #export("content") {
 
 <div class="container-fluid">
   <div class="row" style="margin: 25px">
     <div class="col-12">
-      <button class="btn-danger" style="float: right;">Renerate Report</button>
+      <a href="/report">
+        <button class="btn-danger" style="float: right;">Renerate Report</button>
+      </a>
     </div>
   </div>
 </div>

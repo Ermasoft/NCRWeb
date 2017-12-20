@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>NCR - Client</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="/styles/normalize.css">
+        <link rel="stylesheet" href="/styles/skeleton.css">
+    </head>
+    <body>
+        <div class="container">
+            <div style="text-align: center;">
+                <img style="vertical-align: middle;" src="/images/napco.png" width="128px" height="128px">
+            </div>
+            <div class="row">
+                <h4></h4>
+            </div>
+            <div class="row">
+                <h4 style="text-align: center;">Hospitals</h4>
+            </div>
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Hospital</th>
+                        <th>Survey Count</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    #loop(hospitals, "hospital"){
+                       <tr>
+                        <td>#(hospital.name)</td>
+                        <td>#(hospital.count)</td>
+                        <td>#(hospital.percentage)%</td>
+                      </tr>
+                    }
+                </tbody>
+            </table>
+            <div style="page-break-before: always;"></div>
+            <div class="row">
+                <h4 style="text-align: center;">Clients</h4>
+            </div>
+            <table class="u-full-width">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Nationality</th>
+                        <th>Hospital</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    #loop(clients, "client"){
+                       <tr>
+                        <td>#(client.name)</td>
+                        <td>#(client.mobile)</td>
+                        <td>#(client.nationality)</td>
+                        <td>#(client.hospital)</td>
+                      </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
